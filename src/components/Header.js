@@ -64,11 +64,13 @@ const Header = () => {
           alignItems="center"
         >
           <nav>
-            {socials.map((social) => (
-                <a key={social.url} href={social.url } target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={social.icon} size="2x" />
-                </a>
-              ))}
+            <HStack spacing={7}>
+              {socials.map((social) => (
+                  <a key={social.url} href={social.url } target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={social.icon} size="2x" />
+                  </a>
+                ))}
+            </HStack>
           </nav>
           <nav>
             <HStack spacing={8}>
